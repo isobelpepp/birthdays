@@ -9,10 +9,16 @@ class BirthdayList
   end
 
   def shows_list
+    @list.each do |birthday|
+      puts "#{birthday[:name]}: #{birthday[:birthday]}"
+    end
   end
 
   def check_birthday
   end
-  
+
 end
+
+
+
 
